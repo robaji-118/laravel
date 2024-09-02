@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
-
-    font-family: "Poppins", sans-serif;
-    font-weight: 700px;
-    font-style: normal;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 /* navbar */
 .navbar h3 span{
@@ -16,6 +9,9 @@
     border-bottom-left-radius:20px ;
     border-bottom-right-radius:20px ;
     transition: padding-bottom 1s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700px;
+    font-style: normal;
 }
 
 .navbar h3 span:hover{
@@ -30,8 +26,16 @@
 /* navbar end */
 
 /* home */
+
+#home{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700px;
+    font-style: normal;
+}
+
 .home .home2{
     margin-top: 100px;
+
 }
 
 .home .home2 h1 {
@@ -53,49 +57,156 @@
 .home .home2 p {
     font-size: 18px;
     font-weight: 350;
+    margin-left: 7px;
 }
-
 
 .home{
     margin-top: 60px;
+    /* padding-bottom: 100px; */
 }
-
 .home .toji {
-    height: 100%;
+    margin-top: 30px;
+    height: 90%;
     width: 60%;
+    --animate-duration: 1.7s;
 }
+
+.home .item-sosmed a{
+    margin-left: 8px;
+    color: #000000;
+}
+
+
+
+
 /* end home */
-
-/* keterangan */
-#keterangan{
-    margin-top: 90px;
-}
-
-/* keterangan end */
-
 /* about */
 
 #about{
     background-color: #000000;
     margin-top: 50px;
     padding-bottom: 50px;
+    /* padding-top: 100px; */
 }
+.saya{
+    padding-bottom: 70x;
+    /* margin-bottom: 50px; */
+}
+
+.foto_saya1{
+    position: relative;
+    width: 65%;
+
+}
+
+
+.foto_saya2{
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 0px;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.6);
+        /* Black w/opacity/see-through */
+}
+
+.foto_saya3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFF ;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .9s ease;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 0px;
+}
+
+.foto_saya1:hover .foto_saya3 {
+    height: 100%;
+}
+
+.text_foto{
+    color: white;
+    font-size: 25px;
+    font-family: "Permanent Marker", cursive;
+        font-weight: 500;
+        font-style: normal;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* white-space: nowrap; */
+}
+
+
+
+
+.saya_cp{
+    color: #d4c4c4;
+    padding-top: 40px;
+
+}
+
+
+.saya_cp2{
+    border-top: solid 1px #d4c4c4;
+    border-bottom: solid 1px #d4c4c4;
+}
+
+.saya_cp2 h4{
+    margin-top: 170px;
+    color: #d4c4c4;
+
+}
+
+.saya_cp h3{
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-right: 280px;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.saya2{
+    margin-bottom: 50px;
+}
+
 
 #about .card-group{
-    padding-top: 40px;
+    padding-top: 0px;
 }
 
-#about .card{
-    margin-top: 40px;
+
+.hobby{
+    background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.8);/* Black w/opacity/see-through */
 }
 
-#about .card .itadori{
-    height: 243px;
+.features{
+    padding-top: 100px;
 }
 
 /* contact */
 #contact{
     background-color: #000000;
+    padding-bottom: 50px;
+
 }
 
 .contact1{
@@ -107,15 +218,9 @@
 }
 /* contact end*/
 /* footer */
+
 #footer{
     background-color: #000000;
-}
-
-#footer .footer1{
-    padding-top: 130px;
-    color: #343434;
-    font-weight: 300px;
-    padding-bottom: 40px;
 }
 
 
